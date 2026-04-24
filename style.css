@@ -56,16 +56,14 @@ a     { color: inherit; text-decoration: none; }
   position: sticky;
   top: 0;
   z-index: var(--z-nav);
-  background: var(--cream);
+  background: transparent;
   padding: 0 24px 0;
 }
 
 .nav {
   background: var(--cream);
+  border: 3px solid transparent;
   border-top: none;
-  border-left: none;
-  border-right: none;
-  border-bottom: 3px solid transparent;
   border-radius: 0 0 12px 12px;
   display: flex;
   align-items: center;
@@ -74,11 +72,11 @@ a     { color: inherit; text-decoration: none; }
   height: 72px;
   max-width: 1400px;
   margin: 0 auto;
-  transition: border-bottom-color 0.25s ease, box-shadow 0.25s ease;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
 }
 
 .nav.scrolled {
-  border-bottom-color: var(--black);
+  border-color: var(--black);
   box-shadow: 4px 4px 0 rgba(0,0,0,0.3);
 }
 
