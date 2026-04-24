@@ -662,30 +662,32 @@ a     { color: inherit; text-decoration: none; }
    FOOTER
    ================================================================ */
 .footer {
-  background: var(--cream);
-  padding: var(--sp-lg);
+  background: transparent;
+  padding: 0 24px 0;
 }
 
 .footer__card {
   max-width: 1400px;
   margin: 0 auto;
-  background: var(--black);
-  color: var(--cream);
+  background: var(--purple);
+  color: var(--white);
   border: 3px solid var(--black);
-  border-radius: 12px;
+  border-bottom: none;
+  border-radius: 12px 12px 0 0;
   padding: var(--sp-md) var(--sp-lg);
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: var(--sp-lg);
+  box-shadow: -4px -4px 0 rgba(0,0,0,0.3);
 }
 
 .footer__quote {
   font-family: var(--font-body);
   font-size: 13px;
   font-style: italic;
-  color: var(--cream);
-  opacity: 0.75;
+  color: var(--white);
+  opacity: 0.85;
   max-width: 480px;
   line-height: 1.6;
 }
@@ -699,23 +701,23 @@ a     { color: inherit; text-decoration: none; }
 .footer__icon {
   width: 32px;
   height: 32px;
-  border: 2px solid var(--cream);
+  border: 2px solid var(--white);
   border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--cream);
+  color: var(--white);
   cursor: pointer;
   transition: background 0.15s, color 0.15s;
 }
 
 .footer__icon:hover {
-  background: var(--cream);
-  color: var(--black);
+  background: var(--white);
+  color: var(--purple);
 }
 
 .footer__icon:focus-visible {
-  outline: 2px solid var(--purple);
+  outline: 2px solid var(--white);
   outline-offset: 3px;
 }
 
