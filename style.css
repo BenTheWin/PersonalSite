@@ -308,11 +308,11 @@ a     { color: inherit; text-decoration: none; }
 }
 
 .about__bio {
-  margin: var(--sp-xl) 0 var(--sp-xl) var(--sp-lg);
-  padding: var(--sp-xl) var(--sp-lg);
+  margin: var(--sp-lg) 0 var(--sp-lg) var(--sp-lg);
+  padding: var(--sp-md) var(--sp-lg);
   display: flex;
   flex-direction: column;
-  gap: var(--sp-lg);
+  gap: var(--sp-md);
   align-self: stretch;
   justify-content: center;
   background: var(--cream);
@@ -327,7 +327,7 @@ a     { color: inherit; text-decoration: none; }
 }
 
 .about__tags {
-  padding: var(--sp-lg) var(--sp-md);
+  padding: var(--sp-lg) var(--sp-md) var(--sp-lg) 0;
   display: flex;
   flex-direction: column;
   gap: var(--sp-md);
@@ -339,13 +339,14 @@ a     { color: inherit; text-decoration: none; }
   background: var(--green);
   color: var(--white);
   font-family: var(--font-ui);
-  font-size: 15px;
-  letter-spacing: 1px;
-  padding: 18px 24px;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  padding: 16px 14px;
   text-align: center;
   border: 3px solid var(--black);
   box-shadow: 5px 5px 0 var(--black);
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .about__photo {
