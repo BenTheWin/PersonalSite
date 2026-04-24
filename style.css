@@ -68,7 +68,7 @@ a     { color: inherit; text-decoration: none; }
   align-items: center;
   justify-content: space-between;
   padding: 0 var(--sp-lg);
-  height: 64px;
+  height: 72px;
   max-width: 1400px;
   margin: 0 auto;
   transition: border-color 0.25s ease, box-shadow 0.25s ease;
@@ -85,24 +85,12 @@ a     { color: inherit; text-decoration: none; }
   gap: var(--sp-md);
 }
 
-.nav__logo {
-  width: 38px;
-  height: 38px;
-  border: 2px solid var(--black);
-  border-radius: 8px;
-  background: var(--black);
-  color: var(--cream);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
 
 .nav__links {
   display: flex;
   gap: var(--sp-lg);
   font-family: var(--font-ui);
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0.5px;
 }
 
@@ -199,7 +187,7 @@ a     { color: inherit; text-decoration: none; }
 }
 
 .nametag__header {
-  padding: 44px 48px 22px;
+  padding: 24px 48px 14px;
   text-align: center;
 }
 
@@ -328,10 +316,14 @@ a     { color: inherit; text-decoration: none; }
 }
 
 .about__bio p {
-  font-size: clamp(16px, 1.4vw, 22px);
+  font-size: clamp(15px, 1.3vw, 20px);
   line-height: 1.8;
-  color: rgba(255,255,255,0.9);
+  color: var(--black);
   max-width: 60ch;
+  background: var(--cream);
+  border: 3px solid var(--black);
+  box-shadow: 5px 5px 0 var(--black);
+  padding: var(--sp-md) var(--sp-lg);
 }
 
 .about__tags {
@@ -346,15 +338,15 @@ a     { color: inherit; text-decoration: none; }
 
 .tag {
   display: block;
-  background: var(--cream);
-  color: var(--black);
+  background: var(--purple);
+  color: var(--white);
   font-family: var(--font-ui);
-  font-size: 13px;
+  font-size: 15px;
   letter-spacing: 1px;
-  padding: 14px 18px;
+  padding: 18px 24px;
   text-align: center;
   border: 3px solid var(--black);
-  box-shadow: 4px 4px 0 var(--black);
+  box-shadow: 5px 5px 0 var(--black);
   text-transform: uppercase;
 }
 
@@ -481,7 +473,11 @@ a     { color: inherit; text-decoration: none; }
   color: var(--white);
   background: var(--green);
   border: var(--border);
-  padding: var(--sp-md);
+  padding: var(--sp-lg);
+}
+
+.project-card__title--right {
+  text-align: right;
 }
 
 .project-card__footer {
