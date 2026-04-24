@@ -15,13 +15,21 @@
 <body>
 
   <!-- ── NAV ── -->
+  <div class="nav-wrap">
   <nav class="nav" role="navigation" aria-label="Main navigation">
-    <div class="nav__links">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+    <div class="nav__left">
+      <div class="nav__logo" aria-hidden="true">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
+        </svg>
+      </div>
+      <div class="nav__links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
     </div>
     <div class="nav__icons">
       <a href="https://github.com/BenTheWin" target="_blank" rel="noopener noreferrer"
@@ -47,6 +55,7 @@
       </a>
     </div>
   </nav>
+  </div>
 
   <main>
 
@@ -79,19 +88,15 @@
             <p>I'm a software engineering graduate from WGU with a strong foundation in design, programming, and system architecture. I love building things that are clean, maintainable, and actually useful — and I'm always looking for the next challenge to sink my teeth into.</p>
             <p>You can find me at my happiest when I'm learning something new, creating, and making things more efficient. When I'm not at a keyboard, I'm probably behind a drum kit or buried in a manga volume.</p>
           </div>
-          <div class="about__photo" aria-label="Photo placeholder">
-            <div class="photo-placeholder">
-              <svg width="44" height="44" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                <path d="M12 12c2.761 0 5-2.239 5-5s-2.239-5-5-5-5 2.239-5 5 2.239 5 5 5zm0 2c-3.333 0-10 1.667-10 5v2h20v-2c0-3.333-6.667-5-10-5z"/>
-              </svg>
-            </div>
-          </div>
           <div class="about__tags" role="list" aria-label="Personal interests">
             <span class="tag" role="listitem">Left-Handed</span>
             <span class="tag" role="listitem">Video Game Enthusiast</span>
             <span class="tag" role="listitem">Drummer</span>
             <span class="tag" role="listitem">Manga Lover</span>
             <span class="tag" role="listitem">Music Enjoyer</span>
+          </div>
+          <div class="about__photo" aria-label="Photo of Benjamin Stone">
+            <img src="BenPFP.jpg" alt="Benjamin Stone" class="profile-photo">
           </div>
         </div>
       </div>
@@ -168,19 +173,33 @@
       <div class="folder__body">
         <div class="projects-list">
           <article class="project-card">
-            <div class="project-card__image" aria-hidden="true">
-              <svg width="52" height="52" viewBox="0 0 24 24" fill="currentColor" style="opacity:.25">
-                <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12z"/>
-              </svg>
+            <div class="project-card__image">
+              <img src="BlackjackPic.jpeg" alt="Blackjack game screenshot">
             </div>
             <div class="project-card__info">
               <h3 class="project-card__title">Blackjack</h3>
               <p class="project-card__desc">A fully functioning Blackjack game built from scratch. Try to reach 21 without going over and beat the dealer — complete with card dealing logic, scoring, and win/loss states.</p>
-              <div class="project-card__links">
-                <a href="https://benthewin.github.io/ClaudeTest/" target="_blank" rel="noopener noreferrer"
-                   class="btn btn--go">Live ↗</a>
-                <a href="https://github.com/BenTheWin/ClaudeTest" target="_blank" rel="noopener noreferrer"
-                   class="btn btn--ghost">GitHub</a>
+              <div class="project-card__footer">
+                <div class="project-card__tech">
+                  <span>JavaScript</span>
+                  <span>HTML</span>
+                  <span>CSS</span>
+                </div>
+                <div class="project-card__links">
+                  <a href="https://github.com/BenTheWin/ClaudeTest" target="_blank" rel="noopener noreferrer"
+                     class="project-card__link" aria-label="View on GitHub">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                  </a>
+                  <a href="https://benthewin.github.io/ClaudeTest/" target="_blank" rel="noopener noreferrer"
+                     class="project-card__link" aria-label="View live project">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/>
+                      <polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>
+                    </svg>
+                  </a>
+                </div>
               </div>
             </div>
           </article>
