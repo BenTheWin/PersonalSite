@@ -266,8 +266,11 @@
 
   <script>
     const nav = document.querySelector('.nav');
+    const navWrap = document.querySelector('.nav-wrap');
     window.addEventListener('scroll', () => {
-      nav.classList.toggle('scrolled', window.scrollY > 10);
+      const s = window.scrollY > 10;
+      nav.classList.toggle('scrolled', s);
+      navWrap.classList.toggle('scrolled', s);
     }, { passive: true });
   </script>
 </body>
