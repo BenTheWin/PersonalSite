@@ -59,16 +59,12 @@ a     { color: inherit; text-decoration: none; }
   background: var(--cream);
   padding: 10px 24px 0;
   overflow: hidden;
-  transition: box-shadow 0.25s ease;
-}
-
-.nav-wrap.scrolled {
-  box-shadow: 0 8px 28px rgba(0,0,0,0.13);
 }
 
 .nav {
   background: var(--cream);
   border: 3px solid transparent;
+  border-top-color: transparent !important;
   border-radius: 12px;
   display: flex;
   align-items: center;
@@ -77,11 +73,13 @@ a     { color: inherit; text-decoration: none; }
   height: 72px;
   max-width: 1400px;
   margin: 0 auto;
-  transition: border-color 0.25s ease;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
 }
 
 .nav.scrolled {
   border-color: var(--black);
+  border-top-color: transparent !important;
+  box-shadow: 0 6px 0 rgba(0,0,0,0.18), 0 8px 16px rgba(0,0,0,0.12);
 }
 
 .nav__left {
