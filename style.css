@@ -150,13 +150,14 @@ a     { color: inherit; text-decoration: none; }
 .hero {
   background: var(--cream);
   padding: var(--sp-2xl) var(--sp-lg);
+  min-height: calc(100vh - 60px);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .nametag {
-  width: min(600px, 88vw);
+  width: min(1300px, 96vw);
   background: var(--purple);
   border: 4px solid var(--black);
   border-radius: 24px;
@@ -199,10 +200,10 @@ a     { color: inherit; text-decoration: none; }
 
 .nametag__name {
   display: block;
-  font-family: var(--font-display);
-  font-size: clamp(52px, 11vw, 80px);
+  font-family: var(--font-ui);
+  font-size: clamp(80px, 14vw, 220px);
   line-height: 0.93;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   color: var(--black);
   text-transform: uppercase;
 }
@@ -266,8 +267,8 @@ a     { color: inherit; text-decoration: none; }
   position: relative;
 }
 
-.folder--about   .folder__body { background: var(--purple); }
-.folder--skills  .folder__body { background: var(--cream);  }
+.folder--about   .folder__body { background: var(--purple); min-height: calc(100vh - 60px - var(--tab-h)); }
+.folder--skills  .folder__body { background: var(--cream);  min-height: calc(100vh - 60px - var(--tab-h)); display: flex; align-items: center; }
 .folder--projects .folder__body{ background: var(--green);  }
 
 /* ================================================================
@@ -276,7 +277,7 @@ a     { color: inherit; text-decoration: none; }
 .about-grid {
   display: grid;
   grid-template-columns: 1fr 210px 190px;
-  min-height: 220px;
+  min-height: calc(100vh - 60px - var(--tab-h));
 }
 
 .about__bio {
@@ -339,16 +340,15 @@ a     { color: inherit; text-decoration: none; }
    SKILLS — uniform purple tile grid
    ================================================================ */
 .skills-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--sp-md);
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: var(--sp-lg);
   padding: var(--sp-xl) var(--sp-lg);
+  width: 100%;
 }
 
 .skill-tile {
-  width: 100px;
-  height: 100px;
+  aspect-ratio: 1;
   border: var(--border);
   background: var(--purple);
   color: var(--white);
@@ -356,9 +356,9 @@ a     { color: inherit; text-decoration: none; }
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: 14px;
   font-family: var(--font-ui);
-  font-size: 10px;
+  font-size: clamp(11px, 1.2vw, 17px);
   letter-spacing: 1px;
   text-transform: uppercase;
   cursor: default;
@@ -370,11 +370,16 @@ a     { color: inherit; text-decoration: none; }
   box-shadow: 4px 4px 0 var(--black);
 }
 
-.skill-tile img {
-  width: 42px;
-  height: 42px;
+.skill-tile img,
+.skill-tile .skill-icon {
+  width: 42%;
+  max-width: 88px;
+  height: auto;
   object-fit: contain;
-  filter: brightness(0) invert(1); /* white icons on purple */
+}
+
+.skill-tile img {
+  filter: brightness(0) invert(1);
 }
 
 /* ================================================================
@@ -666,16 +671,17 @@ a     { color: inherit; text-decoration: none; }
   }
 
   .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
     gap: var(--sp-sm);
   }
 
   .skill-tile {
-    width: 86px;
-    height: 86px;
+    aspect-ratio: 1;
+    font-size: 11px;
   }
 
   .nametag__name {
-    font-size: clamp(40px, 14vw, 64px);
+    font-size: clamp(52px, 16vw, 80px);
   }
 }
 
