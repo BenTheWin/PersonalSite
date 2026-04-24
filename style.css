@@ -309,7 +309,7 @@ a     { color: inherit; text-decoration: none; }
 
 .about__bio {
   margin: 0 0 0 var(--sp-lg);
-  padding: var(--sp-lg) var(--sp-lg);
+  padding: 56px var(--sp-lg);
   display: flex;
   flex-direction: column;
   gap: var(--sp-md);
