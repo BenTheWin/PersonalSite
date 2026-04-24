@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 9" fill="currentColor" shape-rendering="crispEdges">
+  <!-- top of head: cols 1-5 -->
+  <rect x="1" y="0" width="5" height="1"/>
+  <!-- upper arm band: full 7 wide -->
+  <rect x="0" y="1" width="7" height="2"/>
+  <!-- eye row: only col 0, col 3 (divider), col 6 — cols 1-2 and 4-5 are transparent (eyes) -->
+  <rect x="0" y="3" width="1" height="2"/>
+  <rect x="3" y="3" width="1" height="2"/>
+  <rect x="6" y="3" width="1" height="2"/>
+  <!-- lower body + arm band: full 7 wide -->
+  <rect x="0" y="5" width="7" height="2"/>
+  <!-- legs: left pair cols 1-2, right pair cols 4-5 -->
+  <rect x="1" y="7" width="2" height="2"/>
+  <rect x="4" y="7" width="2" height="2"/>
+</svg>
