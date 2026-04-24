@@ -62,8 +62,8 @@ a     { color: inherit; text-decoration: none; }
 
 .nav {
   background: var(--cream);
-  border: 3px solid var(--black);
-  border-radius: 12px 12px 0 0;
+  border: 3px solid transparent;
+  border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -71,11 +71,12 @@ a     { color: inherit; text-decoration: none; }
   height: 64px;
   max-width: 1400px;
   margin: 0 auto;
-  transition: box-shadow 0.25s ease;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
 }
 
 .nav.scrolled {
-  box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+  border-color: var(--black);
+  box-shadow: 0 6px 24px rgba(0,0,0,0.14);
 }
 
 .nav__left {
@@ -340,6 +341,7 @@ a     { color: inherit; text-decoration: none; }
   gap: var(--sp-md);
   justify-content: center;
   border-right: 2px solid rgba(255,255,255,0.2);
+  background: var(--green);
 }
 
 .tag {
@@ -431,7 +433,7 @@ a     { color: inherit; text-decoration: none; }
 
 .project-card {
   border: var(--border);
-  background: var(--green);
+  background: var(--purple);
   display: grid;
   grid-template-columns: 55% 1fr;
   min-height: 420px;
@@ -443,9 +445,8 @@ a     { color: inherit; text-decoration: none; }
 }
 
 .project-card__image {
-  border-right: var(--border);
   padding: var(--sp-lg);
-  background: var(--green);
+  background: var(--purple);
   display: flex;
   align-items: stretch;
 }
@@ -454,7 +455,8 @@ a     { color: inherit; text-decoration: none; }
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border: var(--border);
+  border: 4px solid var(--black);
+  box-shadow: 6px 6px 0 var(--black);
   display: block;
 }
 
@@ -477,7 +479,7 @@ a     { color: inherit; text-decoration: none; }
   font-size: 14px;
   line-height: 1.7;
   color: var(--white);
-  background: var(--purple);
+  background: var(--green);
   border: var(--border);
   padding: var(--sp-md);
 }
@@ -666,39 +668,56 @@ a     { color: inherit; text-decoration: none; }
    FOOTER
    ================================================================ */
 .footer {
+  background: var(--cream);
+  padding: var(--sp-lg);
+}
+
+.footer__card {
+  max-width: 1400px;
+  margin: 0 auto;
   background: var(--black);
   color: var(--cream);
-  padding: 16px var(--sp-lg);
+  border: 3px solid var(--black);
+  border-radius: 12px;
+  padding: var(--sp-md) var(--sp-lg);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-family: var(--font-body);
-  font-size: 12px;
+  gap: var(--sp-lg);
 }
 
-.footer__copy { opacity: 0.6; }
+.footer__quote {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-style: italic;
+  color: var(--cream);
+  opacity: 0.75;
+  max-width: 480px;
+  line-height: 1.6;
+}
 
 .footer__icons {
   display: flex;
   gap: var(--sp-xs);
+  flex-shrink: 0;
 }
 
 .footer__icon {
   width: 32px;
   height: 32px;
-  border: 2px solid var(--purple);
+  border: 2px solid var(--cream);
   border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--purple);
+  color: var(--cream);
   cursor: pointer;
   transition: background 0.15s, color 0.15s;
 }
 
 .footer__icon:hover {
-  background: var(--purple);
-  color: var(--white);
+  background: var(--cream);
+  color: var(--black);
 }
 
 .footer__icon:focus-visible {
@@ -741,7 +760,6 @@ a     { color: inherit; text-decoration: none; }
 
   .project-card__image {
     min-height: 220px;
-    border-right: none;
     border-bottom: var(--border);
     padding: var(--sp-md);
   }
