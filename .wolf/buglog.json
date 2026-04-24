@@ -1,4 +1,309 @@
 {
   "version": 1,
-  "bugs": []
+  "bugs": [
+    {
+      "id": "bug-001",
+      "timestamp": "2026-04-24T02:42:46.819Z",
+      "error_message": "CSS fix: width",
+      "file": "style.css",
+      "root_cause": "width: min(600px, 88vw) → min(1300px, 96vw)",
+      "fix": "Changed width: min(600px, 88vw) → min(1300px, 96vw)",
+      "tags": [
+        "auto-detected",
+        "style-fix",
+        "css"
+      ],
+      "related_bugs": [],
+      "occurrences": 6,
+      "last_seen": "2026-04-24T02:43:36.678Z"
+    },
+    {
+      "id": "bug-002",
+      "timestamp": "2026-04-24T02:43:00.711Z",
+      "error_message": "Significant refactor of ",
+      "file": "style.css",
+      "root_cause": "2 lines replaced/restructured",
+      "fix": "Rewrote 3→3 lines (2 removed)",
+      "tags": [
+        "auto-detected",
+        "refactor",
+        "css"
+      ],
+      "related_bugs": [],
+      "occurrences": 1,
+      "last_seen": "2026-04-24T02:43:00.711Z"
+    },
+    {
+      "id": "bug-003",
+      "timestamp": "2026-04-24T02:43:06.085Z",
+      "error_message": "Wrong reference: 220px should be calc",
+      "file": "style.css",
+      "root_cause": "Used \"220px\" instead of \"calc\"",
+      "fix": "Changed 220px → calc",
+      "tags": [
+        "auto-detected",
+        "wrong-reference",
+        "css"
+      ],
+      "related_bugs": [],
+      "occurrences": 1,
+      "last_seen": "2026-04-24T02:43:06.085Z"
+    },
+    {
+      "id": "bug-004",
+      "timestamp": "2026-04-24T02:55:35.382Z",
+      "error_message": "Wrong reference: 42px should be 64px",
+      "file": "style.css",
+      "root_cause": "Used \"42px\" instead of \"64px\"",
+      "fix": "Changed 42px → 64px",
+      "tags": [
+        "auto-detected",
+        "wrong-reference",
+        "css"
+      ],
+      "related_bugs": [],
+      "occurrences": 3,
+      "last_seen": "2026-04-24T02:56:43.890Z"
+    },
+    {
+      "id": "bug-005",
+      "timestamp": "2026-04-24T02:55:41.980Z",
+      "error_message": "CSS fix: border-bottom",
+      "file": "style.css",
+      "root_cause": "border-bottom: var(--border) → 3px solid transparent",
+      "fix": "Changed border-bottom: var(--border) → 3px solid transparent",
+      "tags": [
+        "auto-detected",
+        "style-fix",
+        "css"
+      ],
+      "related_bugs": [],
+      "occurrences": 8,
+      "last_seen": "2026-04-24T02:56:33.303Z"
+    },
+    {
+      "id": "bug-006",
+      "timestamp": "2026-04-24T03:15:21.673Z",
+      "error_message": "Significant refactor of ",
+      "file": "index.html",
+      "root_cause": "5 lines replaced/restructured",
+      "fix": "Rewrote 17→31 lines (5 removed)",
+      "tags": [
+        "auto-detected",
+        "refactor",
+        "html"
+      ],
+      "related_bugs": [],
+      "occurrences": 1,
+      "last_seen": "2026-04-24T03:15:21.673Z"
+    },
+    {
+      "id": "bug-007",
+      "timestamp": "2026-04-24T07:10:32.781Z",
+      "error_message": "Significant refactor of ",
+      "file": "style.css",
+      "root_cause": "6 lines replaced/restructured",
+      "fix": "Rewrote 29→55 lines (6 removed) | Also: background: var(--white);; grid-template-columns: 400px 1fr;",
+      "tags": [
+        "auto-detected",
+        "refactor",
+        "css"
+      ],
+      "related_bugs": [],
+      "occurrences": 2,
+      "last_seen": "2026-04-24T07:11:09.093Z"
+    },
+    {
+      "id": "bug-008",
+      "timestamp": "2026-04-24T07:31:22.809Z",
+      "error_message": "CSS fix: background",
+      "file": "style.css",
+      "root_cause": "background: var(--green) → var(--purple)",
+      "fix": "Changed background: var(--green) → var(--purple)",
+      "tags": [
+        "auto-detected",
+        "style-fix",
+        "css"
+      ],
+      "related_bugs": [],
+      "occurrences": 3,
+      "last_seen": "2026-04-24T07:31:33.574Z"
+    },
+    {
+      "id": "bug-009",
+      "timestamp": "2026-04-24T07:31:44.219Z",
+      "error_message": "Significant refactor of ",
+      "file": "style.css",
+      "root_cause": "7 lines replaced/restructured",
+      "fix": "Rewrote 43→60 lines (7 removed)",
+      "tags": [
+        "auto-detected",
+        "refactor",
+        "css"
+      ],
+      "related_bugs": [],
+      "occurrences": 1,
+      "last_seen": "2026-04-24T07:31:44.219Z"
+    },
+    {
+      "id": "bug-010",
+      "timestamp": "2026-04-24T07:41:01.797Z",
+      "error_message": "Incorrect value in code",
+      "file": "index.html",
+      "root_cause": "Had \"project-card__title\"",
+      "fix": "Changed to \"project-card__title project-card__title--right\"",
+      "tags": [
+        "auto-detected",
+        "wrong-value",
+        "html"
+      ],
+      "related_bugs": [],
+      "occurrences": 1,
+      "last_seen": "2026-04-24T07:41:01.797Z"
+    },
+    {
+      "id": "bug-011",
+      "timestamp": "2026-04-24T07:41:08.777Z",
+      "error_message": "CSS fix: height",
+      "file": "style.css",
+      "root_cause": "height: 64px → 72px",
+      "fix": "Changed height: 64px → 72px",
+      "tags": [
+        "auto-detected",
+        "style-fix",
+        "css"
+      ],
+      "related_bugs": [],
+      "occurrences": 5,
+      "last_seen": "2026-04-24T07:41:42.299Z"
+    },
+    {
+      "id": "bug-012",
+      "timestamp": "2026-04-24T07:47:50.276Z",
+      "error_message": "CSS fix: padding",
+      "file": "style.css",
+      "root_cause": "padding: 10px 24px 0 → 10px 24px 12px",
+      "fix": "Changed padding: 10px 24px 0 → 10px 24px 12px",
+      "tags": [
+        "auto-detected",
+        "style-fix",
+        "css"
+      ],
+      "related_bugs": [],
+      "occurrences": 21,
+      "last_seen": "2026-04-24T08:34:50.234Z"
+    },
+    {
+      "id": "bug-013",
+      "timestamp": "2026-04-24T07:47:51.385Z",
+      "error_message": "Wrong reference: 48px should be 96px",
+      "file": "style.css",
+      "root_cause": "Used \"48px\" instead of \"96px\"",
+      "fix": "Changed 48px → 96px",
+      "tags": [
+        "auto-detected",
+        "wrong-reference",
+        "css"
+      ],
+      "related_bugs": [],
+      "occurrences": 2,
+      "last_seen": "2026-04-24T07:51:35.011Z"
+    },
+    {
+      "id": "bug-014",
+      "timestamp": "2026-04-24T08:05:59.526Z",
+      "error_message": "Wrong reference: 12px should be 0",
+      "file": "style.css",
+      "root_cause": "Used \"12px\" instead of \"0\"",
+      "fix": "Changed 12px → 0",
+      "tags": [
+        "auto-detected",
+        "wrong-reference",
+        "css"
+      ],
+      "related_bugs": [],
+      "occurrences": 1,
+      "last_seen": "2026-04-24T08:05:59.526Z"
+    },
+    {
+      "id": "bug-015",
+      "timestamp": "2026-04-24T08:35:44.678Z",
+      "error_message": "Wrong reference: 56px should be 80px",
+      "file": "style.css",
+      "root_cause": "Used \"56px\" instead of \"80px\"",
+      "fix": "Changed 56px → 80px",
+      "tags": [
+        "auto-detected",
+        "wrong-reference",
+        "css"
+      ],
+      "related_bugs": [],
+      "occurrences": 1,
+      "last_seen": "2026-04-24T08:35:44.678Z"
+    },
+    {
+      "id": "bug-016",
+      "timestamp": "2026-04-24T08:47:30.603Z",
+      "error_message": "CSS fix: grid-template-columns",
+      "file": "style.css",
+      "root_cause": "grid-template-columns: 1fr 240px 300px → 500px 200px 1fr",
+      "fix": "Changed grid-template-columns: 1fr 240px 300px → 500px 200px 1fr",
+      "tags": [
+        "auto-detected",
+        "style-fix",
+        "css"
+      ],
+      "related_bugs": [],
+      "occurrences": 4,
+      "last_seen": "2026-04-24T08:51:41.261Z"
+    },
+    {
+      "id": "bug-017",
+      "timestamp": "2026-04-24T09:03:51.931Z",
+      "error_message": "Significant refactor of ",
+      "file": "index.html",
+      "root_cause": "2 lines replaced/restructured",
+      "fix": "Rewrote 8→10 lines (2 removed) | Also: <svg class=\"skill-icon\" viewBox=\"0 0 24 24\" fill=\"; <path d=\"M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-",
+      "tags": [
+        "auto-detected",
+        "refactor",
+        "html"
+      ],
+      "related_bugs": [],
+      "occurrences": 2,
+      "last_seen": "2026-04-24T09:03:58.652Z"
+    },
+    {
+      "id": "bug-018",
+      "timestamp": "2026-04-24T09:14:50.177Z",
+      "error_message": "Incorrect value in code",
+      "file": "index.html",
+      "root_cause": "Had \"https://cdn.jsdelivr.net/gh/devicons/devicon@late",
+      "fix": "Changed to \"c-sharp-svgrepo-com.svg\"",
+      "tags": [
+        "auto-detected",
+        "wrong-value",
+        "html"
+      ],
+      "related_bugs": [],
+      "occurrences": 3,
+      "last_seen": "2026-04-24T09:15:11.272Z"
+    },
+    {
+      "id": "bug-019",
+      "timestamp": "2026-04-24T09:23:51.895Z",
+      "error_message": "Incorrect value in code",
+      "file": "index.html",
+      "root_cause": "Had \"BenPFP.jpg\"",
+      "fix": "Changed to \"Images/BenPFP.jpg\"",
+      "tags": [
+        "auto-detected",
+        "wrong-value",
+        "html"
+      ],
+      "related_bugs": [],
+      "occurrences": 7,
+      "last_seen": "2026-04-24T09:24:18.508Z"
+    }
+  ]
 }
