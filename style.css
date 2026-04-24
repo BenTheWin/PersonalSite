@@ -57,15 +57,15 @@ a     { color: inherit; text-decoration: none; }
   top: 0;
   z-index: var(--z-nav);
   background: var(--cream);
-  padding: 10px 24px 0;
+  padding: 0 24px 0;
   overflow: hidden;
 }
 
 .nav {
   background: var(--cream);
   border: 3px solid transparent;
-  border-top-color: transparent !important;
-  border-radius: 12px;
+  border-top: none;
+  border-radius: 0 0 12px 12px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -78,8 +78,7 @@ a     { color: inherit; text-decoration: none; }
 
 .nav.scrolled {
   border-color: var(--black);
-  border-top-color: transparent !important;
-  box-shadow: 0 6px 0 rgba(0,0,0,0.18), 0 8px 16px rgba(0,0,0,0.12);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.18);
 }
 
 .nav__left {
