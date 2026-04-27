@@ -881,10 +881,16 @@ a     { color: inherit; text-decoration: none; }
     font-size: clamp(52px, 16vw, 80px);
   }
 
-  /* Remove folder overlap on mobile — just stack naturally */
+  /* Restore full overlap so tabs sit on the coloured body above (no cream gap) */
   .folder--skills,
   .folder--projects {
-    margin-top: 0;
+    margin-top: calc(-1 * var(--tab-h));
+  }
+
+  /* Push content down so it isn't hidden behind the next folder's tab */
+  .folder--about .folder__body,
+  .folder--skills .folder__body {
+    padding-bottom: calc(var(--tab-h) + var(--sp-lg));
   }
 
   /* Fix project thumbnail on mobile */
