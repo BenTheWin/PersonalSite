@@ -289,6 +289,26 @@
   </footer>
 
   <script>
+    // TEMP DEBUG: find what's making the page wider than the viewport on iOS
+    window.addEventListener('load', () => {
+      const vw = window.innerWidth;
+      const sw = document.documentElement.scrollWidth;
+      if (sw > vw) {
+        const culprits = [];
+        document.querySelectorAll('*').forEach(el => {
+          const r = el.getBoundingClientRect();
+          if (r.right > vw + 1) {
+            culprits.push(el.tagName + (el.className ? '.' + String(el.className).trim().split(/\s+/).join('.') : '') + ' right=' + Math.round(r.right));
+          }
+        });
+        const msg = 'scrollW=' + sw + ' vw=' + vw + '\n' + culprits.slice(0,10).join('\n');
+        const el = document.createElement('div');
+        el.style.cssText = 'position:fixed;top:0;left:0;right:0;background:red;color:#fff;font-size:11px;padding:4px;z-index:9999;white-space:pre-wrap;word-break:break-all';
+        el.textContent = msg;
+        document.body.appendChild(el);
+      }
+    });
+
     const nav = document.querySelector('.nav');
     const navWrap = document.querySelector('.nav-wrap');
     window.addEventListener('scroll', () => {
