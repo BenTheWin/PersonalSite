@@ -914,10 +914,11 @@ a     { color: inherit; text-decoration: none; }
   }
 
   .project-card__info {
-    align-items: center;
+    align-items: stretch;
   }
 
   .project-card__footer {
+    align-items: center;
     justify-content: center;
   }
 
