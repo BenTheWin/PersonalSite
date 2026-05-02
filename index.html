@@ -233,8 +233,10 @@
         </h2>
       </div>
       <div class="contact__right">
-        <form class="contact__form" action="mailto:benstone2004@gmail.com"
-              method="post" enctype="text/plain" aria-label="Contact form">
+        <form class="contact__form" action="https://api.web3forms.com/submit"
+              method="POST" aria-label="Contact form">
+          <input type="hidden" name="access_key" value="5138157a-83bb-48d4-b222-310ee2239f10">
+          <input type="hidden" name="redirect" value="thank-you.html">
           <div class="form-group">
             <label for="name" class="form-label">Name</label>
             <input type="text" id="name" name="name" class="form-input"
