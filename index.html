@@ -303,13 +303,19 @@
     const mobileMenuClose = document.getElementById('mobileMenuClose');
 
     function openMenu() {
-      mobileMenu.classList.add('open');
+      mobileMenu.classList.add('menu-visible');
+      requestAnimationFrame(() => requestAnimationFrame(() => {
+        mobileMenu.classList.add('open');
+      }));
       mobileMenu.setAttribute('aria-hidden', 'false');
       mobileMenuBtn.setAttribute('aria-expanded', 'true');
       document.body.style.overflow = 'hidden';
     }
     function closeMenu() {
       mobileMenu.classList.remove('open');
+      mobileMenu.addEventListener('transitionend', () => {
+        mobileMenu.classList.remove('menu-visible');
+      }, { once: true });
       mobileMenu.setAttribute('aria-hidden', 'true');
       mobileMenuBtn.setAttribute('aria-expanded', 'false');
       document.body.style.overflow = '';
