@@ -289,28 +289,6 @@
   </footer>
 
   <script>
-    // TEMP DEBUG
-    window.addEventListener('load', () => {
-      const vw = window.innerWidth;
-      const sw = document.documentElement.scrollWidth;
-      const sx = window.scrollX;
-      const body = document.body.getBoundingClientRect();
-      const fb = document.querySelector('.folder--projects .folder__body');
-      const card = document.querySelector('.project-card');
-      const fbR = fb ? fb.getBoundingClientRect() : {};
-      const cardR = card ? card.getBoundingClientRect() : {};
-      const lines = [
-        'vw=' + vw + ' sw=' + sw + ' scrollX=' + sx,
-        'body w=' + Math.round(body.width) + ' right=' + Math.round(body.right),
-        'folderBody w=' + Math.round(fbR.width) + ' left=' + Math.round(fbR.left) + ' right=' + Math.round(fbR.right),
-        'card w=' + Math.round(cardR.width) + ' left=' + Math.round(cardR.left) + ' right=' + Math.round(cardR.right),
-      ];
-      const el = document.createElement('div');
-      el.style.cssText = 'position:fixed;top:0;left:0;right:0;background:#000;color:#0f0;font-size:11px;padding:4px;z-index:9999;white-space:pre-wrap;font-family:monospace';
-      el.textContent = lines.join('\n');
-      document.body.appendChild(el);
-    });
-
     const nav = document.querySelector('.nav');
     const navWrap = document.querySelector('.nav-wrap');
     window.addEventListener('scroll', () => {
