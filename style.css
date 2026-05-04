@@ -927,6 +927,13 @@ a     { color: inherit; text-decoration: none; }
     justify-content: center;
   }
 
+  .project-card__tech {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--sp-xs);
+    font-size: 11px;
+  }
+
   /* Fix nametag name overflow on mobile */
   .hero {
     padding: var(--sp-xl) var(--sp-md);
