@@ -446,6 +446,12 @@ a     { color: inherit; text-decoration: none; }
   align-items: stretch;
 }
 
+.project-card__image picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 .project-card__image img {
   width: 100%;
   height: 100%;
@@ -932,6 +938,10 @@ a     { color: inherit; text-decoration: none; }
     justify-content: center;
     gap: var(--sp-xs);
     font-size: 11px;
+  }
+
+  .project-card__links {
+    align-self: flex-end;
   }
 
   /* Fix nametag name overflow on mobile */
